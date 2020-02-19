@@ -1,0 +1,68 @@
+#logo {
+    border-radius: 10px; 
+    border: white 2px solid;
+}
+
+#NavBar {
+    background-image: url("https://wallpaperplay.com/walls/full/7/0/7/316958.jpg");
+    background-size: cover;
+    width: 100%; 
+    left: 0px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.profile-img{
+    background-image: url(/Images/Profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nav-content-container {
+    border-radius: 5em;
+    padding: .25em 1em;
+    -webkit-box-shadow: 15px 17px 34px -14px rgba(0,0,0,1);
+    -moz-box-shadow: 15px 17px 34px -14px rgba(0,0,0,1);
+    box-shadow: 15px 17px 34px -14px rgba(0,0,0,1);
+}
+
+#profile-wrapper {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.icon_border {
+    height: 40px;
+    width: 60px;
+    display: flex;
+    text-align: center;
+    border-right: 2px solid white;
+}
+
+.home-content {
+    border-radius: 3em;
+    padding: 0em .25em;
+    -webkit-box-shadow: 15px 17px 34px -14px rgba(0,0,0,1);
+    -moz-box-shadow: 15px 17px 34px -14px rgba(0,0,0,1);
+    box-shadow: 15px 17px 34px -14px rgba(0,0,0,1);
+}
+
+.home-container {
+    margin-right: auto;
+}
+
+#brand {
+    margin-right: 2em;
+}
+
+#root {
+    background-color: #2E5984;
+    min-height: 100vh;
+}
+
+.Title {
+    padding-bottom: .25em;
+    border-bottom: 5px solid white;
+}
