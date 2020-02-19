@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Card from './Card'
 
 class Chirp extends Component {
     constructor(props) {
@@ -29,23 +30,13 @@ class Chirp extends Component {
         if ((parseInt(this.props.id, 10) % 2) === 0) {
             return (
                 <div className="d-flex flex-column" id={this.props.id} >
-                    < div className="card col-sm-6 my-2">
-                        <div className="card-body text-dark">
-                            <h5 className="card-title">{this.props.newchirp.author} says...</h5>
-                            <p className="card-text">{this.props.newchirp.message}</p>
-                        </div>
-                    </div>
+                    <Card author={this.props.newchirp.author} message= {this.props.newchirp.message}/>
                 </div>
             )
         } else {
             return (
-                <div className="d-flex flex-column align-items-end">
-                    <div className="card col-sm-6 my-2 " id={this.props.id}>
-                        <div className="card-body text-dark">
-                            <h5 className="card-title">{this.props.newchirp.author} says...</h5>
-                            <p className="card-text">{this.props.newchirp.message}</p>
-                        </div>
-                    </div>
+                <div className="d-flex flex-column align-items-end" id={this.props.id}>
+                    <Card author={this.props.newchirp.author} message= {this.props.newchirp.message}/>
                 </div>
             )
         }

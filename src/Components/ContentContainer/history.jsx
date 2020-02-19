@@ -1,8 +1,12 @@
-import React, { Component } from 'react'
+import React, { } from 'react'
 import Chirp from './chirp'
 
 let History = (props) => {
-    return props.chirps.map((chirp_content, index) => <Chirp newchirp={chirp_content} key={index} id={index}/>)
+    return props.chirps.map((chirp_content, index) => {
+        return (
+            <Chirp newchirp={chirp_content} key={index} id={index} />
+        )
+    })
 
 }
 

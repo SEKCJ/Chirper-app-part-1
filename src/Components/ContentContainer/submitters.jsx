@@ -34,7 +34,7 @@ class CardSubmitter extends Component {
             this.setState({
                 chirp_array: [...this.state.chirp_array, element]
             })
-            this.setState({author: "", message: ""})
+            this.setState({ author: "", message: "" })
         }
 
     }
@@ -48,7 +48,7 @@ class CardSubmitter extends Component {
                             <div className="card-body text-dark">
                                 <form action="">
                                     <h5 className="card-title">
-                                        {"Enter Your Name"}
+                                        "Enter Your Name"
                                     </h5>
                                     <div className="form-group">
                                         <input type="text" className="form-control"
@@ -74,7 +74,7 @@ class CardSubmitter extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className = "mx-auto col-sm-6 mt-3">
+                    <div className="mx-auto col-sm-6 mt-3">
                         <History chirps={this.state.chirp_array} />
                     </div>
                 </div>
