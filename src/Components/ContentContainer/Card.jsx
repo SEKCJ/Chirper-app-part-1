@@ -7,7 +7,7 @@ class Card extends Component {
             < div className="card col-sm-7 my-2">
                 <div className="card-body text-dark">
                     <h5 className="card-title">{this.props.author} says...</h5>
-                    <p className="card-text border border-primary rounded pl-2">"{this.props.message}"</p>
+                    <p className="card-text border border-primary rounded pl-2 bg-primary text-light">{this.props.message}</p>
                 </div>
             </div>
         )
