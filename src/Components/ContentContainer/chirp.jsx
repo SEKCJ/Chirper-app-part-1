@@ -4,8 +4,8 @@ import Card from './Card'
 class Chirp extends Component {
     constructor(props) {
         super(props);
-        let val = this.props.id
-        let element = document.getElementById(val - 1)
+        this.val = this.props.id
+        let element = document.getElementById(this.val - 1)
         if (element !== null) {
             this.top = element.offsetTop
         } else {
@@ -22,7 +22,9 @@ class Chirp extends Component {
     }
 
     componentDidMount() {
-        this.scrollToBottom()
+        if (this.val > 2) {
+            this.scrollToBottom()
+        }
     }
 
 
@@ -30,13 +32,13 @@ class Chirp extends Component {
         if ((parseInt(this.props.id, 10) % 2) === 0) {
             return (
                 <div className="d-flex flex-column" id={this.props.id} >
-                    <Card author={this.props.newchirp.author} message= {this.props.newchirp.message}/>
+                    <Card author={this.props.newchirp.author} message={this.props.newchirp.message} />
                 </div>
             )
         } else {
             return (
                 <div className="d-flex flex-column align-items-end" id={this.props.id}>
-                    <Card author={this.props.newchirp.author} message= {this.props.newchirp.message}/>
+                    <Card author={this.props.newchirp.author} message={this.props.newchirp.message} />
                 </div>
             )
         }

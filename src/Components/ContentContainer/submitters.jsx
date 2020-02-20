@@ -48,7 +48,7 @@ class CardSubmitter extends Component {
                             <div className="card-body text-dark">
                                 <form action="">
                                     <h5 className="card-title">
-                                        "Enter Your Name"
+                                        Enter Your Name
                                     </h5>
                                     <div className="form-group">
                                         <input type="text" className="form-control"
