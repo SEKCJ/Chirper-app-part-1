@@ -24,7 +24,7 @@ class Chirp extends Component {
     componentDidMount() {
         if (this.val > 2) {
             this.scrollToBottom()
-        }
+        } 
     }
 
 

@@ -9,9 +9,9 @@ class CardSubmitter extends Component {
             message: "",
             button: false,
             chirp_array: [
-                { author: "Jake", message: "What's the move?" },
-                { author: "Ray", message: "ATO is the move" },
-                { author: "Rob", message: "Waho is the move" }
+                { author: "Jake", message: "hockey forever" },
+                { author: "Ray", message: "It's the name of the game" },
+                { author: "Rob", message: "Waho forever" }
             ],
         }
     }
@@ -65,9 +65,13 @@ class CardSubmitter extends Component {
                                             onChange={(event) => { this.handleInputChange(event.target.value, "text") }}
                                             placeholder={"Wee Woo Wee Woo Wee"} />
                                     </div>
-                                    <button type="submit" className="btn btn-primary"
-                                        onClick={(e) => this.handleClick(e)}
-                                    >Submit</button>
+                                    <div className="d-flex justify-content-center">
+                                        <button type="submit" className="btn btn-primary"
+                                            onClick={(e) => this.handleClick(e)}
+                                            style = {{"width": "30%"}}
+                                        >Submit</button>
+
+                                    </div>
                                 </form>
                             </div>
                         </div>
